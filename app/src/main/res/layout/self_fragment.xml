@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.zhy.android.percent.support.PercentRelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    >
+    <ImageView
+        android:layout_height="45dp"
+        android:layout_width="50dp"
+        android:padding="10dp"
+        android:src="@drawable/back2"
+        android:id="@+id/self_quit_image"/>
+
+    <TextView android:layout_height="45dp"
+        android:layout_width="match_parent"
+        android:id="@+id/self_quit_text"
+        android:gravity="center_vertical"
+        android:textSize="15sp"
+        android:textColor="@color/text_common"
+        android:padding="5dp"
+        android:text="退出登录"
+        android:layout_alignTop="@+id/self_quit_image"
+        android:layout_toRightOf="@+id/self_quit_image"/>
+
+    <TextView
+        android:layout_height="1dp"
+        android:layout_width="match_parent"
+        android:id="@+id/self_cut_text1"
+        android:layout_below="@+id/self_quit_image"
+        android:background="@color/colorLineItem"/>
+
+    <ImageView android:layout_height="45dp" android:layout_width="50dp" android:src="@drawable/appra"   android:padding="10dp" android:id="@+id/self_judge_image" android:layout_below="@+id/self_cut_text1"/>
+
+    <TextView android:layout_height="45dp" android:layout_width="match_parent" android:id="@+id/self_judge_text" android:gravity="center_vertical" android:textSize="15sp" android:textColor="@color/text_common" android:padding="5dp" android:text="菜品评价" android:layout_alignTop="@id/self_judge_image" android:layout_toRightOf="@+id/self_judge_image"/>
+
+    <TextView android:layout_height="1dp" android:layout_width="match_parent" android:id="@+id/self_cut_text2" android:layout_below="@+id/self_judge_text" android:background="@color/colorLineItem"/>
+
+    <ImageView android:layout_height="45dp" android:layout_width="50dp" android:src="@drawable/save" android:id="@+id/self_save_image" android:padding="10dp" android:layout_below="@+id/self_cut_text2"/>
+
+    <TextView android:layout_height="45dp" android:layout_width="match_parent" android:id="@+id/self_save_text" android:gravity="center_vertical" android:textSize="15sp" android:textColor="@color/text_common" android:padding="5dp" android:text="聚宝盆" android:layout_alignTop="@id/self_save_image" android:layout_toRightOf="@+id/self_save_image"/>
+
+    <TextView android:layout_height="1dp" android:layout_width="match_parent" android:id="@+id/self_cut_text3" android:layout_below="@+id/self_save_text" android:background="@color/colorLineItem"/>
+
+    <ImageView android:layout_height="45dp" android:layout_width="50dp" android:src="@drawable/hot2" android:id="@+id/self_quick_image" android:padding="10dp" android:layout_below="@+id/self_cut_text3"/>
+
+    <TextView android:layout_height="45dp" android:layout_width="match_parent" android:id="@+id/self_quick_text" android:gravity="center_vertical" android:textSize="15sp" android:textColor="@color/text_common" android:padding="5dp" android:text="大优惠抢购" android:layout_alignTop="@id/self_quick_image" android:layout_toRightOf="@+id/self_quick_image"/>
+
+    <TextView android:layout_height="1dp" android:layout_width="match_parent" android:id="@+id/self_cut_text4" android:layout_below="@+id/self_quick_text" android:background="@color/colorLineItem"/>
+
+    <ImageView android:layout_height="45dp" android:layout_width="50dp" android:src="@drawable/history2" android:id="@+id/self_best_image" android:padding="10dp" android:layout_below="@+id/self_cut_text4"/>
+
+    <TextView android:layout_height="45dp" android:layout_width="match_parent" android:id="@+id/self_best_text" android:gravity="center_vertical" android:textSize="15sp" android:textColor="@color/text_common" android:padding="5dp" android:text="历史高分商店" android:layout_alignTop="@id/self_best_image" android:layout_toRightOf="@+id/self_best_image"/>
+
+    <TextView android:layout_height="1dp" android:layout_width="match_parent" android:id="@+id/self_cut_text5" android:layout_below="@+id/self_best_text" android:background="@color/colorLineItem"/>
+
+    <ImageView android:layout_height="45dp" android:layout_width="50dp" android:src="@drawable/skip2" android:id="@+id/self_area_image" android:padding="10dp" android:layout_below="@+id/self_cut_text5"/>
+
+    <TextView android:layout_height="45dp" android:layout_width="match_parent" android:id="@+id/self_area_text" android:gravity="center_vertical" android:textSize="15sp" android:textColor="@color/text_common" android:padding="5dp" android:text="切换菜市场" android:layout_alignTop="@id/self_area_image" android:layout_toRightOf="@+id/self_area_image"/>
+
+
+
+
+</com.zhy.android.percent.support.PercentRelativeLayout>

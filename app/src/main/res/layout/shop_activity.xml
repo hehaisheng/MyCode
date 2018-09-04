@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    >
+
+    <TextView
+        android:id="@+id/shop_all_money"
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:text=""
+        android:background="@color/colorTheme"
+        android:textColor="@color/colorWhite"
+        android:padding="7dp"
+        android:textSize="15sp"
+        android:gravity="center"
+        />
+    <TextView
+        android:id="@+id/shop_head_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_toLeftOf="@+id/shop_all_money"
+        android:layout_alignTop="@+id/shop_all_money"
+        android:text="好好猪"
+        android:background="@color/colorTheme"
+        android:textColor="@color/colorWhite"
+        android:padding="7dp"
+        android:textSize="15sp"
+        android:gravity="center_vertical"
+        />
+    <android.support.v4.widget.SwipeRefreshLayout
+        android:id="@+id/shop_SwipeLayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/shop_head_title"
+
+        >
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/shop_recycler"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:visibility="gone">
+
+        </android.support.v7.widget.RecyclerView>
+    </android.support.v4.widget.SwipeRefreshLayout>
+
+
+
+    <ImageView
+        android:id="@+id/shop_delete_pay"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:src="@drawable/pay"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginLeft="30dp"
+        android:layout_marginBottom="35dp"
+
+        />
+
+    <RelativeLayout
+        android:id="@+id/shop_layout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/itemBackground"
+        android:visibility="gone">
+        <ProgressBar
+            android:id="@+id/shop_progress"
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:layout_centerInParent="true"
+            android:indeterminateDuration="1000"
+            android:indeterminateDrawable="@anim/large_progressbar_animator"/>
+        <TextView
+            android:id="@+id/shop_content"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="@color/itemBackground"
+            android:layout_below="@+id/shop_progress"
+            android:text="登陆中..."
+            android:layout_marginTop="15dp"
+            android:textSize="13sp"
+            android:gravity="center"
+
+            />
+
+
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/shop_show"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:textColor="@color/itemBackground"
+        android:text="登陆中..."
+        android:textSize="13sp"
+        android:gravity="center"
+        android:visibility="gone"
+        />
+</RelativeLayout>

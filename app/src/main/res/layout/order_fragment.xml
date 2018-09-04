@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/order_recycler"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+    </android.support.v7.widget.RecyclerView>
+
+    <ImageView
+        android:id="@+id/order_delete_pay"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:src="@drawable/pay"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginLeft="30dp"
+        android:layout_marginBottom="35dp"
+
+        />
+
+    <RelativeLayout
+        android:id="@+id/order_layout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/itemBackground"
+        android:visibility="gone">
+        <ProgressBar
+            android:id="@+id/order_progress"
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:layout_centerInParent="true"
+            android:indeterminateDuration="1000"
+            android:indeterminateDrawable="@anim/large_progressbar_animator"/>
+        <TextView
+            android:id="@+id/order_content"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="@color/colorTheme"
+            android:layout_below="@+id/order_progress"
+            android:text="支付中..."
+            android:layout_marginTop="10dp"
+            android:textSize="12sp"
+            android:gravity="center"
+
+            />
+
+
+    </RelativeLayout>
+</RelativeLayout>
