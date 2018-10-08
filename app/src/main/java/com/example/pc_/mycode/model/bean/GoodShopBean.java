@@ -3,7 +3,7 @@ package com.example.pc_.mycode.model.bean;
 import java.util.ArrayList;
 import java.util.List;
 
-public class GoodShopBean {
+public class GoodShopBean  extends BaseRequest{
 
 
 	

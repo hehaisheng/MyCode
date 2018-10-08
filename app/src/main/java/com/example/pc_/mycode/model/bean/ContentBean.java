@@ -4,7 +4,7 @@ package com.example.pc_.mycode.model.bean;
  * Created by pc- on 2018/7/25.
  */
 
-public class ContentBean {
+public class ContentBean  extends BaseRequest{
 
 
     public String content;

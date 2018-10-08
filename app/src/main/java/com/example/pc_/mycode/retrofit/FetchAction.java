@@ -3,7 +3,6 @@ package com.example.pc_.mycode.retrofit;
 import android.content.Context;
 
 import com.example.pc_.mycode.model.bean.ContentBean;
-import com.example.pc_.mycode.utils.Constants;
 
 import okhttp3.RequestBody;
 import retrofit2.Retrofit;

@@ -5,6 +5,7 @@ import android.widget.ImageView;
 
 import com.bumptech.glide.Glide;
 import com.bumptech.glide.load.engine.DiskCacheStrategy;
+import com.example.pc_.mycode.retrofit.Constants;
 
 /**
  * Created by pc- on 2017/10/26.
@@ -25,7 +26,7 @@ public class GlideDownload {
     }
     public  void  download(Activity activity, String netPath, ImageView imageView) {
 
-        String imagePath=Constants.baseUrl+"ImageServlet?imagePath="+netPath;
+        String imagePath= Constants.baseUrl+"ImageServlet?imagePath="+netPath;
 
         Glide.with(activity).load(imagePath)
                 .diskCacheStrategy(DiskCacheStrategy.RESULT).into(imageView);

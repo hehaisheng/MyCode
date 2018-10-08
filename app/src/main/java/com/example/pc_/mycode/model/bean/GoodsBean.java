@@ -3,7 +3,7 @@ package com.example.pc_.mycode.model.bean;
 import java.util.ArrayList;
 import java.util.List;
 
-public class GoodsBean {
+public class GoodsBean  extends BaseResponse{
 
 
 	//返回给商家的商品json数据

@@ -6,7 +6,6 @@ import com.example.pc_.mycode.model.bean.ContentBean;
 import com.example.pc_.mycode.model.bean.GoodShopBean;
 import com.example.pc_.mycode.model.bean.GoodsBean;
 import com.example.pc_.mycode.model.bean.NewsBean;
-import com.example.pc_.mycode.utils.Constants;
 
 import okhttp3.RequestBody;
 import retrofit2.Retrofit;
